@@ -1,0 +1,105 @@
+@font-face {
+  font-family: cusFont;
+  src: url("./assets/TitilliumWeb-Regular.ttf");
+}
+
+@font-face {
+  font-family: cusFontBold;
+  src: url("./assets/TitilliumWeb-Bold.ttf");
+}
+
+.bodyMain{
+  background-image: url("./assets/bg.jpg");
+  text-decoration: none;
+  font-family: 'cusFont';
+}
+
+.homeTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  height: 50vh;
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.homeGrid{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  gap: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.homeGridBox{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.headerMain{
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 20px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.headerMain p{
+  color: gray;
+  font-size: 25px;
+}
+
+.headerMain a{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.imagesMain{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.imgBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .homeTitle{
+    font-size: 25px;
+  }
+  .homeGrid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .headerMain p{
+    color: gray;
+    font-size: 13px;
+  }
+  
+  .headerMain a{
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .imagesMain{
+    grid-template-columns: 1fr;
+  }
+  
+}
